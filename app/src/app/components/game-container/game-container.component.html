@@ -3,10 +3,18 @@
 <h1>Typing Game</h1>
 
 
+
 <p class="paragraph">
   {{ paragraph }}
 </p>
 
 Current Word is: {{ words[cursor] }}
 <br>
+
 <input class="game-input" type="text" #gameInput (keydown)="onKeydown($event)">
+
+
+<p>
+
+  Your score is: {{ points }}
+</p>
